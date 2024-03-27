@@ -5,27 +5,56 @@
   </div>
 
   <section class="container">
-    <form onsubmit="app.HomeController.createHouse()" class="row border shadow my-3 rounded py-2">
-      <label class="form-label" for="">Address</label>
-      <input type="text" name="address" required minlength="10" maxlength="50" class="form-control"
-        placeholder="123 Sesame Street">
-      <label class="form-label" for="">Year Built</label>
-      <input type="number" name="year" class="form-control" required min="1875" max="2030">
-      <label class="form-label" for="">Bedrooms</label>
-      <input type="number" name="bedrooms" class="form-control" required min="1" max="20">
-      <label class="form-label" for="">Bathrooms</label>
-      <input type="number" name="bathrooms" class="form-control" required min="1" max="10">
-      <label class="form-label" for="">Square Feet</label>
-      <input type="number" name="sqft" class="form-control" required min="100" max="100000">
-      <label class="form-label" for="">Price</label>
-      <input type="number" name="price" class="form-control" required min="10000" max="10000000">
-      <label class="form-label" for="">Describe the features of your home:</label>
-      <input type="textbox" name="description" class="form-control" required placeholder="List unique features here"
-        maxlength="1000">
-      <label class="form-label" for="">Share a picture of your home:</label>
-      <input type="url" name="imgUrl" class="form-control" required placeholder="URL here">
-      <button type="submit" class="btn btn-success shadow">Submit Your House</button>
-    </form>
+    <div class="row">
+      <form onsubmit="app.HomeController.createHouse()" class="row border shadow my-3 rounded py-2">
+        <h3>Sell your house with Gregslist!</h3>
+        <div class="form-floating mb-3 col-md-6">
+          <input type="text" name="address" required minlength="10" maxlength="50" class="form-control"
+            placeholder="123 Sesame Street" placeholder="entry">
+          <label class="form-label">Address</label>
+        </div>
+        <div class="form-floating mb-3 col-md-4">
+          <input type="url" name="imgUrl" class="form-control" required placeholder="URL here" placeholder="entry">
+          <label class="form-label" for="">URL for image</label>
+        </div>
+        <div class="row">
+          <div class="form-floating mb-3 col-md-2">
+            <input type="number" name="year" class="form-control" required min="1875" max="2030" placeholder="entry"
+              placeholder="entry">
+            <label class="form-label" for="">Year Built</label>
+          </div>
+          <div class="form-floating mb-3 col-md-2">
+            <input type="number" name="bedrooms" class="form-control" required min="1" max="20" placeholder="entry"
+              placeholder="entry">
+            <label class="form-label" for="">Bedrooms</label>
+          </div>
+          <div class="form-floating mb-3 col-md-2">
+            <input type="number" name="bathrooms" class="form-control" required min="1" max="10" placeholder="entry"
+              placeholder="entry">
+            <label class="form-label" for="">Bathrooms</label>
+          </div>
+          <div class="form-floating mb-3 col-md-2">
+            <input type="number" name="sqft" class="form-control" required min="100" max="100000" placeholder="entry"
+              placeholder="entry">
+            <label class="form-label" for="">Square Feet</label>
+          </div>
+          <div class="form-floating mb-3 col-md-2">
+            <input type="number" name="price" class="form-control" required min="10000" max="10000000"
+              placeholder="entry" placeholder="entry">
+            <label class="form-label" for="">Price</label>
+          </div>
+        </div>
+        <div class="form-floating mb-3 col-md-6">
+          <input type="textbox" name="description" class="form-control" required placeholder="List unique features here"
+            maxlength="1000" placeholder="entry">
+          <label class="form-label" for="">Describe the features of your home:</label>
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-success shadow">Submit Your House</button>
+        </div>
+
+      </form>
+    </div>
   </section>
 </div>
 <section class="container">
